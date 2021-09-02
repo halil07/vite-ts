@@ -1,0 +1,26 @@
+{
+  "name": "vite-typescript-library",
+  "version": "0.0.0",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/vite-typescript-library.umd.js",
+  "unpkg": "dist/vite-typescript-library.iife.js",
+  "jsdelivr": "dist/vite-typescript-library.iife.js",
+  "module": "./dist/vite-typescript-library.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vite-typescript-library.es.js",
+      "require": "./dist/vite-typescript-library.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "vite": "latest"
+  }
+}
